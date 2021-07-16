@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, "Open Sans", sans-serif;
+  color: #2e2e2e;
+  background-color: #93b3da;
+}
+/* главная секция */
+.mainSection {
+  width: 1100px;
+  border-radius: 1%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e1fcf4;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(
+      rgba(60, 107, 134, 0.4),
+      rgba(60, 107, 134, 0.6)
+    ),
+    url("../bg/rostow_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* блок с заголовком и формой для обратной связи */
+header {
+  padding: 30px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+/* заголовок с текстом: туры по городам россии. дизайнерский шрифт */
+h1 {
+  font-family: "Accuratist", sans-serif;
+  font-size: 45px;
+  color: gold;
+  text-shadow: 3px 3px rgb(4, 5, 80);
+}
+/* заголовок с текстом: ростов-на-дону. дизайнерский шрифт */
+h2 {
+  font-family: "Measure", sans-serif;
+  font-size: 35px;
+  color: gold;
+  text-shadow: 3px 3px rgb(4, 5, 80);
+}
+
+.headerText {
+  text-align: center;
+}
+/* форма для обратной связи */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  color: rgb(238, 197, 94);
+  text-shadow: 1px 1px rgb(4, 5, 80);
+}
+/* убираем подчеркивание у ссылок */
+a {
+  text-decoration: none;
+}
+/* блок с текстом про ростов и формой для авторизации */
+.firstSection {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+/* логин пароль */
+.authorizationForm {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.authorizationFormMain {
+  float: right;
+  margin-top: 30px;
+}
+/* стилизую форму ввода */
+input {
+  background-color: rgba(61, 61, 61, 0.288);
+  border: none;
+  outline: none;
+  font-family: Tahoma, "Open Sans", sans-serif;
+  font-style: italic;
+  color: #ffeaea;
+  text-shadow: 1px 1px rgb(4, 5, 80);
+}
+/* кнопка запуск onClick */
+#authorizationButton {
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: goldenrod;
+  font-family: Tahoma, "Open Sans", sans-serif;
+  color: #ffeaea;
+  text-shadow: 1px 1px rgb(4, 5, 80);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+}
+/* кнопка при наведении */
+#authorizationButton:hover {
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(189, 144, 33);
+  font-family: Tahoma, "Open Sans", sans-serif;
+  color: #ffeaea;
+  text-shadow: 1px 1px rgb(4, 5, 80);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+/* кнопка при нажатии */
+#authorizationButton:focus {
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(189, 144, 33);
+  font-family: Tahoma, "Open Sans", sans-serif;
+  color: #ffeaea;
+  text-shadow: 1px 1px rgb(4, 5, 80);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+/* текст про ростов */
+.textAboutRostow {
+  color: #ffeaea;
+  text-shadow: 1px 1px rgb(4, 5, 80);
+}
+/* секция с блоками: карта и фотографии */
+.mediaSection {
+  display: flex;
+  justify-content: space-between;
+}
+/* фотографии */
+.imageSection {
+  width: 530px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* главное фото */
+#imageShowplace {
+  width: 520px;
+  height: 520px;
+  border-radius: 2%;
+}
+/* заголовок к фотографии поверх изображения */
+#imageShowplaceText {
+  text-align: left;
+  width: 400px;
+  font-style: italic;
+  color: #ffeaea;
+  text-shadow: 1px 1px rgb(4, 5, 80);
+  position: absolute;
+  z-index: 1;
+}
+/* блок с мини-фото */
+.imageSectionButtons {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.imageButtons {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 25%;
+}
+/* далее следует 24 кнопки с фоновым изображением */
+#firstImageButton {
+  background-image: url("../img/akvapark_h2o_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#secondImageButton {
+  background-image: url("../img/bolshaya_sadovaya_ulitsa_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#thirdImageButton {
+  background-image: url("../img/centralnyj_park_gorkogo_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#fourthImageButton {
+  background-image: url("../img/cerkov_surb_hach_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#fifthImageButton {
+  background-image: url("../img/dom_margarity_chernovoj_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#sixthImageButton {
+  background-image: url("../img/fontan_na_teatralnoy_ploshchadi_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#seventhImageButton {
+  background-image: url("../img/iverskiy_zhenskiy_monastyr_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#eighthImageButton {
+  background-image: url("../img/kumzhenskaya_roscha_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#ninthImageButton {
+  background-image: url("../img/lev_ber_don_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#tenthImageButton {
+  background-image: url("../img/muzei_izobrazitelnyh_iskusstv_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#eleventhImageButton {
+  background-image: url("../img/muzey_kraevedeniya_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#twelfthImageButton {
+  background-image: url("../img/muzey_skzhd_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#thirteenthImageButton {
+  background-image: url("../img/muzykalnyj_teatr_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#fourteenthImageButton {
+  background-image: url("../img/naberezhnaya_reki_don_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#fifteenthImageButton {
+  background-image: url("../img/paramonovskie_sklady_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#sixteenthImageButton {
+  background-image: url("../img/park_revolyutsii_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#seventeenthImageButton {
+  background-image: url("../img/pokrovskaja_cerkov_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#eighteenthImageButton {
+  background-image: url("../img/pushkinskaya_ulica_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#nineteenthImageButton {
+  background-image: url("../img/rostovskii_muzei_kosmonavtiki_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#twentiethImageButton {
+  background-image: url("../img/rostovskii_zoopark_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#twentyfirstImageButton {
+  background-image: url("../img/sobor_presvyatoy_bogoroditsy_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#twentysecondImageButton {
+  background-image: url("../img/tachanka_pamjatnik_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#twentythirdImageButton {
+  background-image: url("../img/teatr_dramy_imeni_gorkogo_mini.jpg");
+  background-repeat: no-repeat;
+}
+
+#twentyfourthImageButton {
+  background-image: url("../img/zmievskaya_balka_mini.jpg");
+  background-repeat: no-repeat;
+}
+/* секция с youtube каналом */
+.youtubeSection {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+/* срезаю углы у окна карты и youtube канала */
+iframe {
+  border-radius: 2%;
+}
+
+footer {
+  text-align: center;
+  font-size: smaller;
+  font-style: italic;
+}
+/* подключаю дизайнерские шрифты */
+@font-face {
+  font-family: "Accuratist";
+  src: url("../fonts/Accuratist.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Measure";
+  src: url("../fonts/Measure.ttf");
+  font-style: normal;
+  font-weight: normal;
+}

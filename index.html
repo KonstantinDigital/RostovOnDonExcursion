@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ростов-на-Дону</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="mainSection">
+        <header>
+            <div class="headerText">
+                <h1>ТУРЫ ПО ГОРОДАМ РОССИИ</h1>
+                <h2>"РОСТОВ-НА-ДОНУ"</h2>
+            </div>
+            <!--headerText-->
+            <div class="contactForm">
+                <p class="contactForm">Приобрести тур:</p>
+                <a class="contactForm" href="tel:+79085188288">+7 908 518-82-88</a>
+                <a class="contactForm" href="mailto:martyrhartman@yandex.ru">martyrhartman@ya.ru</a>
+            </div>
+            <!--contactForm-->
+        </header>
+        <!--header-->
+        <div class="firstSection">
+            <div class="aboutRostow">
+                <div class="authorizationFormMain">
+                    <form name="loginPass">
+                        <input class="authorizationForm" type="text" name="login" value="qwerty@mail.ru">
+                        <input class="authorizationForm" type="password" name="pass" value="12345678">
+                        <button id="authorizationButton" class="authorizationForm" onclick="onClick()">Вход</button>
+                    </form>
+                    <!--authorizationForm-->
+                </div>
+                <!--authorizationFormMain-->
+                <p class="textAboutRostow">Ростов-на-Дону — крупнейший город на юго-западе России, административный
+                    центр Южного федерального округа и Ростовской области.Историко географический регион Дон. Город
+                    воинской славы (2008).
+                </p>
+                <p class="textAboutRostow">
+                    Основан по грамоте императрицы Елизаветы Петровны от 15 декабря 1749 года. Расположен на
+                    юго-востоке Восточно-Европейской равнины, на обоих берегах реки Дон в 46 км от места её впадения
+                    в Азовское море и в 380 км от Чёрного моря, в 1092 км к югу от Москвы.
+                </p>
+                <p class="textAboutRostow">
+                    Население — 1 137 904 человек (2020), это десятый по численности населения город России. В
+                    пределах Ростовской агломерации проживает свыше 2,16 млн человек (пятая по численности
+                    агломерация страны).
+                </p>
+                <p class="textAboutRostow">
+                    Город является крупным административным, экономическим, культурным, научно-образовательным,
+                    промышленным центром и важнейшим транспортным узлом Юга России. Неофициально Ростов именуют
+                    «Воротами Кавказа» и южной столицей России, а также донской столицей. Распространено понятие
+                    «Ростов-папа» наряду с не менее распространённым «Одесса-мама». Также, 21 февраля 2019 года
+                    Ростов-на-Дону был признан региональной столицей на законодательном уровне.
+                </p>
+                <p class="textAboutRostow">
+                    В 2012 году Ростов-на-Дону занял 1-е место в рейтинге качества городской среды. В 2018 году
+                    Ростов-на-Дону был одним из городов, в которых прошли матчи чемпионата мира по футболу.
+                    Wikipedia<sup>&reg;</sup>
+                </p>
+            </div>
+            <!--aboutRostow-->
+        </div>
+        <!--firstSection-->
+        <div class="mediaSection">
+            <div class="mapSection">
+                <a class="dg-widget-link"
+                    href="http://2gis.ru/rostov/profiles/3378229001765631,3378228001523146,3378228001528819,3378228001509307,3378228001510093,3378229001970722,70000001040711879,3378228001509306,3378228001509302,3378228001582828,3378228001510049,3378228001539335,3378228001730835,3378228001648092,3378228001522264,3378228001510101,3378228001510048/center/39.69600677490235,47.24404652858924/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+                    на карте Ростова-на-Дону</a>
+                <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+                <script
+                    charset="utf-8">new DGWidgetLoader({ "width": 500, "height": 690, "borderColor": "#a3a3a3", "pos": { "lat": 47.24404652858924, "lon": 39.69600677490235, "zoom": 12 }, "opt": { "city": "rostov" }, "org": [{ "id": "3378229001765631" }, { "id": "3378228001523146" }, { "id": "3378228001528819" }, { "id": "3378228001509307" }, { "id": "3378228001510093" }, { "id": "3378229001970722" }, { "id": "70000001040711879" }, { "id": "3378228001509306" }, { "id": "3378228001509302" }, { "id": "3378228001582828" }, { "id": "3378228001510049" }, { "id": "3378228001539335" }, { "id": "3378228001730835" }, { "id": "3378228001648092" }, { "id": "3378228001522264" }, { "id": "3378228001510101" }, { "id": "3378228001510048" }] });</script>
+                <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript.
+                    Включите его в настройках вашего браузера.</noscript>
+            </div>
+            <!--mapSection-->
+            <div class="imageSection">
+                <img id="imageShowplace" src="img/bolshaya_sadovaya_ulitsa.jpg" alt="ул.Большая Садовая">
+                <p id="imageShowplaceText">ул.Большая Садовая</p>
+
+                <div class="imageSectionButtons">
+                    <button id="firstImageButton" class="imageButtons"></button>
+                    <button id="secondImageButton" class="imageButtons"></button>
+                    <button id="thirdImageButton" class="imageButtons"></button>
+                    <button id="fourthImageButton" class="imageButtons"></button>
+                    <button id="fifthImageButton" class="imageButtons"></button>
+                    <button id="sixthImageButton" class="imageButtons"></button>
+                    <button id="seventhImageButton" class="imageButtons"></button>
+                    <button id="eighthImageButton" class="imageButtons"></button>
+                    <button id="ninthImageButton" class="imageButtons"></button>
+                    <button id="tenthImageButton" class="imageButtons"></button>
+                    <button id="eleventhImageButton" class="imageButtons"></button>
+                    <button id="twelfthImageButton" class="imageButtons"></button>
+                    <button id="thirteenthImageButton" class="imageButtons"></button>
+                    <button id="fourteenthImageButton" class="imageButtons"></button>
+                    <button id="fifteenthImageButton" class="imageButtons"></button>
+                    <button id="sixteenthImageButton" class="imageButtons"></button>
+                    <button id="seventeenthImageButton" class="imageButtons"></button>
+                    <button id="eighteenthImageButton" class="imageButtons"></button>
+                    <button id="nineteenthImageButton" class="imageButtons"></button>
+                    <button id="twentiethImageButton" class="imageButtons"></button>
+                    <button id="twentyfirstImageButton" class="imageButtons"></button>
+                    <button id="twentysecondImageButton" class="imageButtons"></button>
+                    <button id="twentythirdImageButton" class="imageButtons"></button>
+                    <button id="twentyfourthImageButton" class="imageButtons"></button>
+                </div>
+                <!--imageSectionButtons-->
+            </div>
+            <!--imageSection-->
+        </div>
+        <!--mediaSection-->
+        <div class="youtubeSection">
+            <iframe width="800" height="450"
+                src="https://www.youtube.com/embed/videoseries?list=PLyjbDzk0hWvmBbqt2m3diuWlFHCfTTZu7" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <!--youtubeSection-->
+    </div>
+    <!--mainSection-->
+    <footer>
+        <p>2020 Martyr Hartman Development</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
